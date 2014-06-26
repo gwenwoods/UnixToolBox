@@ -9,5 +9,6 @@ echo 'Transform letter and Pipe'
 #  -cs change all non-alphabet to 
 #
 # sort: put the lines in alphabetic order
+# uniq: remove duplicated lines
 
-tr 'A-Z' 'a-z' < input.txt | tr -cs 'a-z' '\n' | sort  
+tr 'A-Z' 'a-z' < input.txt | tr -cs 'a-z' '\n' | sort | uniq 
